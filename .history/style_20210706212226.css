@@ -1,0 +1,83 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+/* ▼ WHERE YOUR CODE BEGINS */
+body {
+  background-color: black;
+}
+.card-header span {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #7d858f;
+}
+.sr-only {
+  display: none;
+}
+.card-detail {
+  font-size: 14px;
+  color: #7d858f;
+}
+.property-detail {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  display: flex;
+  background-color: white;
+  width: 840px;
+  height: 248px;
+}
+.card-image {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: url(./img-house.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 24px;
+}
+.card-content {
+  margin: 24px 0px;
+}
+.card-title {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.plus-badge {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  width: 48px;
+  height: 22px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+  background-color: #92174d;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.card-header {
+  display: flex;
+}
+.property-rate {
+  margin-left: 190px;
+}
+.property-rate strong {
+  font-size: 16px;
+  font-weight: 400;
+}
+.property-rate img {
+  width: 13px;
+  height: 13px;
+}
+.like-button {
+  position: absolute;
+  background-image: url(./icon-favorite.svg);
+}

@@ -1,0 +1,37 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+* {
+  box-sizing: border-box;
+}
+/* ▼ WHERE YOUR CODE BEGINS */
+body {
+  background-color: black;
+}
+.card-header span {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #7d858f;
+}
+.sr-only {
+  display: none;
+}
+.card-detail {
+  font-size: 14px;
+  color: #7d858f;
+}
+.card {
+  display: flex;
+  background-color: white;
+  width: 840px;
+  height: 248px;
+  align-items: center;
+  justify-content: center;
+}
+.card-image {
+  width: 300px;
+  height: 200px;
+  background-image: url(./img-house.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

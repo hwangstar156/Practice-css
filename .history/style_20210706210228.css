@@ -1,0 +1,64 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* ▼ WHERE YOUR CODE BEGINS */
+body {
+  background-color: black;
+}
+.card-header span {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #7d858f;
+}
+.sr-only {
+  display: none;
+}
+.card-detail {
+  font-size: 14px;
+  color: #7d858f;
+}
+.card {
+  display: flex;
+  background-color: white;
+  width: 840px;
+  height: 248px;
+}
+.card-image {
+  width: 300px;
+  height: 200px;
+  background-image: url(./img-house.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 24px;
+}
+.card-content {
+  margin: 24px 0px;
+}
+.card-title {
+  font-weight: 400;
+  font-size: 20px;
+}
+.plus-badge {
+  font-size: 14px;
+  width: 48px;
+  height: 22px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+  background-color: #92174d;
+}
+.card-header {
+  display: flex;
+}
+.property-detail {
+  text-align: left;
+}
+.property-rate {
+  font-size: 16px;
+  font-weight: 400;
+}
