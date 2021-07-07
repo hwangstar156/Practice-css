@@ -72,8 +72,10 @@ section {
   height: 48px;
   font-size: 15px;
   font-weight: bold;
-  border-radius: 2px;
+  border-radius: 3px;
   line-height: 48px;
+  margin: 5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .button-group a:first-child {
   background-color: blue;
@@ -83,9 +85,15 @@ section {
   background-color: white;
   color: blue;
 }
+.button-group a:hover {
+  transform: scale(1.03);
+  transition: all 300ms;
+}
 .button-group {
+  width: 100%;
+  height: 48px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /*testimonial*/
@@ -224,12 +232,88 @@ section {
 }
 /*>=768*/
 @media screen and (min-width: 768px) {
+  /*total setting*/
   p {
     font-size: 22px;
     line-height: 1.36363636;
   }
   section {
     width: 1440px;
+  }
+  .container {
+    width: 915px;
+  }
+  .col-12 {
+    padding: 0;
+  }
+  /*landing*/
+
+  .landing-title {
+    font-size: 70px;
+    line-height: 72px;
+    letter-spacing: -0.05em;
+  }
+  .button-group {
+    height: 56px;
+  }
+  .button-group a {
+    width: 160px;
+    height: 56px;
+    line-height: 56px;
+  }
+
+  /*testimonial*/
+  .testimonials {
+    height: 340px;
+  }
+  .boxs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .testimonials-box:first-child {
+    width: 40%;
+  }
+  .testimonials-box:last-child {
+    width: 45%;
+  }
+  .testimonials-box h2 {
+    letter-spacing: -0.04em;
+    font-size: 26px;
+  }
+
+  /*program*/
+  .program {
+    height: 827px;
+  }
+  .program-wire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .program-logo {
+    font-size: 22px;
+  }
+
+  .program-title {
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+  }
+  .img-boxs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .program-img {
+    width: 31%;
+  }
+  .program-img:hover {
+    background-color: rgba(0, 0, 225, 0.8);
+    color: white;
+    transition: background 250ms;
   }
 }
 
