@@ -3,28 +3,51 @@
   margin: 0;
 }
 body {
-  background-color: black;
+  font-family: "DM Sans", sans-serif;
 }
-.line-button {
-  position: relative;
-  width: 110px;
-  height: 56px;
-  background-color: white;
+/*Reset css*/
+a {
+  text-decoration: none;
+  color: inherit; /*부모의 색깔 상속받아라!!*/
+}
+button,
+textarea,
+input {
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.25;
-  font-family: Arial, Helvetica, sans-serif;
-  border: none;
 }
-.line-button::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0;
-  background-color: #0066ff;
-  bottom: 0;
-  left: 0;
-  transition: width 250ms;
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  box-shadow: none;
+  outline: none;
 }
-.line-button:hover::after {
-  width: 100%;
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
+/*>=768*/
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 22px;
+    line-height: 1.36363636;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
 }
