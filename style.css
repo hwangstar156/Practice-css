@@ -63,7 +63,6 @@ section {
   font-style: normal;
 }
 .landing-desc {
-  font-size: 16px;
   margin: 24px 0px;
 }
 .button-group a {
@@ -85,7 +84,7 @@ section {
   background-color: white;
   color: blue;
 }
-.button-group a:hover {
+a:hover {
   transform: scale(1.03);
   transition: all 300ms;
 }
@@ -159,13 +158,57 @@ section {
   background-image: url(./asset/img-parttime-flex.png);
 }
 
+/*Curriculum*/
+.curriculum {
+  height: 706px;
+  background-color: white;
+}
+.curriculum-base-main h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0189d1;
+}
+.curriculum-base-main h1 {
+  font-size: 34px;
+  letter-spacing: -0.03em;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.curriculum-apllybtn {
+  display: inline-block;
+  width: 140px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background-color: #3040c4;
+  color: white;
+  margin-top: 32px;
+  border-radius: 2%;
+}
+.curriculum-desc {
+  margin-top: 48px;
+}
+.desc-box {
+  margin-bottom: 40px;
+}
+.desc-box h2 {
+  font-size: 15px;
+  display: inline;
+  font-weight: bold;
+}
+.desc-box p {
+  font-size: 15px;
+  display: inline;
+}
+
 /*banner*/
 .banner {
   height: 588px;
   background-color: #f2f8fa;
   text-align: center;
 }
-.banner .col-12::before {
+.banner-box::before {
   margin-top: 20px;
   content: "";
   display: block;
@@ -314,6 +357,103 @@ section {
     background-color: rgba(0, 0, 225, 0.8);
     color: white;
     transition: background 250ms;
+  }
+
+  /*Curriculum*/
+  .curriculum {
+    height: 728px;
+  }
+  .curriculum-base-main {
+    width: 450px;
+    height: 408px;
+  }
+  .curriculum-base::after {
+    content: "";
+    background-image: url(./asset/img-curriculum.png);
+    display: block;
+    width: 450px;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .curriculum-base-main h1 {
+    font-size: 56px;
+  }
+  .curriculum-base-main h2 {
+    font-size: 22px;
+  }
+  .curriculum-apllybtn {
+    width: 160px;
+    height: 56px;
+    line-height: 56px;
+    margin-top: 80px;
+  }
+  .curriculum-base {
+    display: flex;
+  }
+  .curriculum-desc {
+    margin-top: 24px;
+    display: flex;
+  }
+  .desc-box {
+    width: 450px;
+    margin: 0;
+    height: 78px;
+  }
+  .desc-box h2 {
+    font-size: 18px;
+  }
+  .desc-box p {
+    font-size: 18px;
+  }
+
+  /*banner*/
+  .banner {
+    height: 460px;
+    justify-content: center;
+  }
+  .banner-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+  }
+  .banner-box::before {
+    width: 287px;
+    height: 285px;
+  }
+  .banner-main {
+    width: 530px;
+    height: 236px;
+    background-size: contain;
+  }
+  .banner-submit {
+    text-align: center;
+    display: flex;
+    height: 56px;
+  }
+  .banner-email {
+    width: 362px;
+    margin-right: 12px;
+  }
+  .banner-btn {
+    height: 100%;
+    width: 160px;
+    margin: 0;
+    line-height: 56px;
+  }
+  /*footer*/
+  .footer {
+    height: 56px;
+  }
+  .footer-menu {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .footer-menu a {
+    margin-right: 24px;
   }
 }
 
